@@ -7,11 +7,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        .menu {
+            display: none;
+        }
+        .menu.active {
+            display: block;
+        }
+    </style>
 </head>
 <body class="font-roboto">
     <nav class="flex justify-between items-center p-6">
         <div class="text-xl font-bold">NusantaraCook</div>
-        <nav>
+        <div class="md:hidden">
+            <button id="hamburger" class="focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <nav class="hidden md:flex">
             <ul class="flex justify-center space-x-4 mt-2">
                 <li><a href="index.html" class="hover:underline">Beranda</a></li>
                 <li><a href="resep.html" class="hover:underline">Resep</a></li>
@@ -20,6 +33,15 @@
             </ul>
         </nav>
     </nav>
+
+    <div id="menu" class="menu absolute top-16 left-0 w-full bg-white shadow-md p-4">
+        <ul class="flex flex-col space-y-2">
+            <li><a href="index.html" class="hover:underline">Beranda</a></li>
+            <li><a href="resep.html" class="hover:underline">Resep</a></li>
+            <li><a href="artikel.html" class="hover:underline">Artikel</a></li>
+            <li><a href="kontak.html" class="hover:underline">Kontak</a></li>
+        </ul>
+    </div>
 
     <div class="flex justify-center items-center mt-10">
         <div class="text-center">
@@ -37,5 +59,14 @@
             <img alt="Illustration of a landscape" class="rounded-full" height="350" src="logo.jpg" width="350"/>
         </div>
     </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
