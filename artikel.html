@@ -1,0 +1,92 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        /* Custom styles for the dropdown menu */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+        }
+        .dropdown-menu a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body class="bg-white text-center">
+    <header class="flex justify-between items-left p-4 relative">
+        <div class="flex items-left space-x-4">
+            <i class="fas fa-bars text-2xl cursor-pointer" onclick="toggleMenu()"></i>
+            <h1 class="text-xl font-bold">ARTIKEL</h1>
+        </div>
+        <div></div> <!-- Placeholder for alignment -->
+        <div id="dropdownMenu" class="dropdown-menu">
+            <a href="index.html">Beranda</a>
+            <a href="resep.html">Resep</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+    </header>
+    <main class="mt-10">
+        <p class="text-lg mt-2">Temukan informasi tentang masakan</p>
+        <div class="flex justify-center mt-10 space-x-10">
+            <div class="text-center">
+                <a href="halaman_artikel_1.html">
+                    <img alt="Landscape illustration with hills and clouds" class="mx-auto cursor-pointer" height="100" src="soto lamongan.jpg" width="200"/>
+                </a>
+                <p class="mt-2">Soto Lamongan</p>
+                <a href="https://id.wikipedia.org/wiki/Soto_lamongan" style="color: red;">Baca Selengkapnya</a>
+            </div>
+            <div class="text-center">
+                <a href="halaman_artikel_2.html">
+                    <img alt="Landscape illustration with hills and clouds" class="mx-auto cursor-pointer" height="100" src="Rendang.jpg" width="200"/>
+                </a>
+                <p class="mt-2">Rendang</p>
+                <a href="https://en.wikipedia.org/wiki/Rendang" style="color: red;">Baca Selengkapnya</a>
+            </div>
+            <div class="text-center">
+                <a href="halaman_artikel_2.html">
+                    <img alt="Landscape illustration with hills and clouds" class="mx-auto cursor-pointer" height="100" src="mie aceh.jpg" width="200"/>
+                </a>
+                <p class="mt-2">Mie Aceh</p>
+                <a href="https://id.wikipedia.org/wiki/Mi_aceh" style="color: red;">Baca Selengkapnya</a>
+            </div>
+            <div class="text-center">
+                <a href="halaman_artikel_2.html">
+                    <img alt="Landscape illustration with hills and clouds" class="mx-auto cursor-pointer" height="100" src="kerak telor.jpg" width="200"/>
+                </a>
+                <p class="mt-2">Kerak Telor</p>
+                <a href="https://id.wikipedia.org/wiki/Kerak_telor" style="color: red;">Baca Selengkapnya</a>
+            </div>
+            <div class="text-center">
+                <a href="halaman_artikel_2.html">
+                    <img alt="Landscape illustration with hills and clouds" class="mx-auto cursor-pointer" height="100" src="empek empek palembang.jpg" width="200"/>
+                </a>
+                <p class="mt-2">Pempek Palembang</p>
+                <a href="https://en.wikipedia.org/wiki/Pempek" style="color: red;">Baca Selengkapnya</a>
+            </div>
+        </div>
+    </main>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('dropdownMenu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
