@@ -113,6 +113,54 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Resep Empek-Empek -->
+            <div class="text-center">
+                <img alt="Foto Empek-Empek" class="mx-auto rounded" height="150" src="empek empek palembang.jpg" width="300"/>
+                <h2 class="text-xl font-semibold mt-4 cursor-pointer text-blue-500">
+                    <span class="underline" id="toggle-button-empek">Empek-Empek</span>
+                </h2>
+                <div id="bahan-empek" class="text-left hidden mt-4">
+                    <ul class="list-disc ml-8 mb-4">
+                        <li class="font-semibold">Bahan Bahan:</li>
+                        <p>1. 500 gram ikan tenggiri, haluskan</p>
+                        <p>2. 300 gram tepung sagu</p>
+                        <p>3. 2 siung bawang putih, haluskan</p>
+                        <p>4. 1 sdt garam</p>
+                        <p>5. 200 ml air</p>
+                    </ul>
+                    <ul class="list-disc ml-8 mb-4">
+                        <li class="font-semibold">Langkah Langkah:</li>
+                        <p>1. Campurkan ikan, bawang putih, garam, dan air, aduk hingga rata.</p>
+                        <p>2. Tambahkan tepung sagu sedikit demi sedikit hingga adonan kalis.</p>
+                        <p>3. Bentuk sesuai selera, rebus hingga matang, lalu goreng dan sajikan dengan kuah cuko.</p>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Resep Mie Aceh -->
+            <div class="text-center">
+                <img alt="Foto Mie Aceh" class="mx-auto rounded" height="150" src="mie aceh.jpg" width="300"/>
+                <h2 class="text-xl font-semibold mt-4 cursor-pointer text-blue-500">
+                    <span class="underline" id="toggle-button-mieaceh">Mie Aceh</span>
+                </h2>
+                <div id="bahan-mieaceh" class="text-left hidden mt-4">
+                    <ul class="list-disc ml-8 mb-4">
+                        <li class="font-semibold">Bahan Bahan:</li>
+                        <p>1. 300 gram mie kuning basah</p>
+                        <p>2. 100 gram udang atau daging sapi</p>
+                        <p>3. 3 siung bawang putih, cincang</p>
+                        <p>4. 2 sdm kari bubuk</p>
+                        <p>5. 2 sdm kecap manis dan garam secukupnya</p>
+                    </ul>
+                    <ul class="list-disc ml-8 mb-4">
+                        <li class="font-semibold">Langkah Langkah:</li>
+                        <p>1. Tumis bawang putih hingga harum, masukkan udang atau daging.</p>
+                        <p>2. Tambahkan kari bubuk, kecap manis, dan mie kuning, aduk rata.</p>
+                        <p>3. Masak hingga bumbu meresap, sajikan dengan acar dan emping.</p>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -130,6 +178,8 @@
             { buttonId: 'toggle-button-sate', contentId: 'bahan-sate' },
             { buttonId: 'toggle-button-nasigoreng', contentId: 'bahan-nasigoreng' },
             { buttonId: 'toggle-button-sopbuntut', contentId: 'bahan-sopbuntut' },
+            { buttonId: 'toggle-button-empek', contentId: 'bahan-empek' },
+            { buttonId: 'toggle-button-mieaceh', contentId: 'bahan-mieaceh' },
         ];
 
         toggleButtons.forEach(({ buttonId, contentId }) => {
@@ -149,3 +199,4 @@
     </script>
 </body>
 </html>
+        
